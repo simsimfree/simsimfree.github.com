@@ -5,7 +5,7 @@ theme: jekyll-theme-chirpy
 
 # Only if your site type is GitHub Project sites and doesn't have a custom domain,
 # change below value to '/projectname'.
-baseurl: ''
+baseurl: '' # the subpath of your site, e.g. "/blog"
 
 # the HTML language tag › https://www.w3.org/International/questions/qa-choosing-language-tags
 lang: en-US
@@ -16,6 +16,7 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # --------------------------
 title: SimSimFree                      # the main title
+subtitle                 : # site tagline that appears below site title in masthead
 
 tagline:     # it will display as the sub-title
 
@@ -32,8 +33,8 @@ author: SimSimFree                  # change to your full name
 github:
   username: simsimfree             # change to your github username
 
-twitter:
-  username: twitter_username            # change to your twitter username
+# twitter:
+#  username: twitter_username            # change to your twitter username
 
 social:
   name: simsimfree                  # it will shows as the copyright owner in Footer
@@ -49,6 +50,7 @@ social:
 google_site_verification: 9ArhOhDRcpXOzqAAnznM4BQ7s5EdUoBvwD0Z4DFCADY # change to your verification string
 # --------------------------
 
+# TODO 
 google_analytics:
   id: ''          # Fill with your Google Analytics ID
   pv:
@@ -80,6 +82,7 @@ theme_mode: #[light|dark]
 # e.g. 'https://cdn.com'
 img_cdn: '' #https://cdn.jsdelivr.net/gh/simsimfree/cdn@latest
 
+# TODO
 # the avatar on sidebar, support local or CORS resources
 avatar: https://cdn.jsdelivr.net/gh/cotes2020/chirpy-images/commons/avatar.jpg
 
@@ -87,8 +90,8 @@ avatar: https://cdn.jsdelivr.net/gh/cotes2020/chirpy-images/commons/avatar.jpg
 toc: true
 
 disqus:
-  comments: false  # boolean type, the global switch for posts comments.
-  shortname: ''    # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+  comments: true  # boolean type, the global switch for posts comments.
+  shortname: 'simsimfree-github-io'    # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 paginate: 10
 
