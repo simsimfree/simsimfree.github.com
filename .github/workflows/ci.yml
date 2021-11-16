@@ -37,7 +37,7 @@ jobs:
           bundler-cache: true
 
       - name: Build Site
-        run: bash bundle exec jekyll b
+        run: bundle exec jekyll b -d "_site"
 
       - name: Test Site
         run: bash tools/deploy.sh --dry-run
