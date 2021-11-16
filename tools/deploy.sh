@@ -10,10 +10,10 @@ _no_branch=false
 _backup_dir="$(mktemp -d)"
 
 init() {
-  if [[ -z ${GITHUB_ACTION+x} ]]; then
-    echo "ERROR: This script is not allowed to run outside of GitHub Action."
-    exit -1
-  fi
+#  if [[ -z ${GITHUB_ACTION+x} ]]; then
+#    echo "ERROR: This script is not allowed to run outside of GitHub Action."
+#    exit -1
+#  fi
 
   # Gemfile could be changed by `bundle install` in actions workflow
   if [[ -n $(git ls-files | grep Gemfile.lock) && -n \
@@ -65,9 +65,9 @@ deploy() {
 
 main() {
   init
-  backup
-  flush
-  deploy
+ # backup
+ # flush
+ # deploy
 }
 
 main
