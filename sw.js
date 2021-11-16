@@ -1,6 +1,11 @@
-self.importScripts('/assets/js/data/cache-list.js');
+---
+layout: compress
+# PWA service worker
+---
 
-var cacheName = 'chirpy-20210720.1940';
+self.importScripts('{{ "/assets/js/data/cache-list.js" | relative_url }}');
+
+var cacheName = 'chirpy-{{ "now" | date: "%Y%m%d.%H%M" }}';
 
 
 function isExcluded(url) {
@@ -54,4 +59,3 @@ self.addEventListener('activate', (e) => {
     })
   );
 });
-
