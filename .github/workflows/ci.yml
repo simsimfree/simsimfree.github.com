@@ -36,5 +36,8 @@ jobs:
           ruby-version: 2.7
           bundler-cache: true
 
+      - name: Build Site
+        run: bash tools/test.sh 
+
       - name: Test Site
         run: bash tools/deploy.sh --dry-run

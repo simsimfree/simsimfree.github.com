@@ -10,7 +10,6 @@ _no_branch=false
 _backup_dir="$(mktemp -d)"
 
 init() {
-  echo ${GITHUB_ACTION}
   if [[ -z ${GITHUB_ACTION+x} ]]; then
     echo "ERROR: This script is not allowed to run outside of GitHub Action."
     exit -1
