@@ -1,5 +1,25 @@
 # Build and Release Folders
-.jekyll-cache/
+.jekyll-cache
 .jekyll-cache/Jekyll/
 .jekyll-cache/Jekyll/Cache/Jekyll--Cache/b7/
 .jekyll-cache/Jekyll/Cache/Jekyll--Cache/b7/9606fb3afea5bd1609ed40b622142f1c98125abcfe89a76a661b0e8e343910
+
+
+# hidden files
+.*
+!.git*
+!.editorconfig
+!.nojekyll
+!.travis.yml
+
+# bundler cache
+_site
+vendor
+Gemfile.lock
+
+# rubygem
+*.gem
+
+# npm dependencies
+node_modules
+package-lock.json
